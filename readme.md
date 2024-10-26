@@ -51,7 +51,7 @@ This is a Real-Time Weather Monitoring Dashboard that displays current weather d
 
 2. **Install Python Dependencies**:
    ```bash
-   pip install flask
+   pip install -r requirements.txt
    ```
 
 3. **API Key Configuration**:

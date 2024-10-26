@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/style.css">
+    <title>Weather Monitoring Dashboard</title>
+</head>
+<body>
+    <div class="container">
+        <div style="text-align: right; padding: 10px;">
+            <label for="unit-select">Temperature Unit:</label>
+            <select id="unit-select">
+                <option value="C">Celsius (°C)</option>
+                <option value="F">Fahrenheit (°F)</option>
+            </select>
+        </div>
+
+        <h1>Real-Time Weather Monitoring</h1>
+        <div id="countdown">Next fetch in: <span id="countdown-timer"></span> seconds</div>
+        
+        <!-- Weather Data Selection -->
+        <div class="weather-summary">
+            <h2>Data Summary with city</h2>
+            <form id="city-select-form">
+                <div class="custom-select-wrapper">
+                    <select id="city-select" class="custom-select">
+                        {% for city in cities %}
+                            <option value="{{ city }}">{{ city }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+            </form>
+        </div>
+        
+        <!-- Latest Weather Data Display -->
+        <div class="weather-summary">
+            <div id="weather-container">
+                <!-- Weather data will be populated here -->
+            </div>
+        </div>
+
+        <div class="weather-summary">
+            <h2>Temperature Trends</h2>
+            <select id="time-period-select" class="custom-select">
+                <option value="hourly">Hourly</option>
+                <option value="daily">Daily</option>
+                <option value="weekly">Weekly</option>
+                <option value="monthly">Monthly</option>
+            </select>
+            <canvas id="temperatureChart" width="400" height="200"></canvas>
+        </div>
+
+
+
+    </div>
+
+    <script src="/static/scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</body>
+</html>

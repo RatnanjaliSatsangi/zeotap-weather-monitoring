@@ -1,0 +1,117 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+.weather-summary {
+    margin-top: 20px;
+}
+
+/* Weather Card Styling */
+.weather-card {
+    background-color: #e0f7fa;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+#countdown {
+    text-align: center;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+/* Button Styling */
+.btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* Custom Select Wrapper */
+.custom-select-wrapper {
+    position: relative;
+    display: block;
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+/* Custom Select Styling */
+.custom-select {
+    width: 100%;
+    padding: 15px;
+    font-size: 1.1em;
+    border: 2px solid #007bff;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    color: blue;
+    appearance: none;
+    font-weight: bold;
+    cursor: pointer;
+    /* transition: all 0.3s ease; */
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath fill='%23ffffff' d='M6 8l4 4 4-4z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 15px center;
+}
+
+/* .custom-select:hover {
+    background: linear-gradient(135deg, #0056b3, #003d80);
+    border-color: #003d80;
+    color: white;
+} */
+
+.custom-select:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(0, 61, 128, 0.5);
+}
+
+/* Weather Summary Container */
+#weather-summary-container {
+    margin-top: 20px;
+}
+
+/* Summary Card Styling */
+.summary-card {
+    background-color: #f8f9fa;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.summary-card h3 {
+    margin: 0 0 10px 0;
+}
+
+.summary-card p {
+    margin: 5px 0;
+}

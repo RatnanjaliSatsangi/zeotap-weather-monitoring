@@ -35,7 +35,7 @@ def init_db():
 
 init_db()
 
-API_KEY = '0bc5a9f095fc73b3bbdd623c2f314324'  # Replace with your API key
+API_KEY = 'API_KEY'  # Replace with your API key
 CITIES = ["Delhi", "Mumbai", "Chennai", "Bangalore", "Kolkata", "Hyderabad"]
 SCHEDULE_INTERVAL = 300  # in seconds (5 minutes)
 
